@@ -1,5 +1,7 @@
 tasks:
-  - init: |
-      echo 'TODO: build project'
-    command: |
-      echo 'TODO: start app'
+  - init: npm install
+    command: npm run dev
+
+ports:
+  - port: 3000
+    onOpen: open-browser
